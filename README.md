@@ -1,2 +1,3 @@
-# hairglow-salon-preview
-Webloom preview site for Hair and Glow Salon, Ghatkopar East (noindex)
+# Hair and Glow Salon — Webloom preview
+
+Static preview site (noindex). Not yet live.
