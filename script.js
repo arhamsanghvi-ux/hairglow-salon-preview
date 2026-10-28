@@ -105,3 +105,25 @@
     });
   }
 })();
+
+/* Lookbook Gents / Ladies tabs */
+(function(){
+  const tabs=[...document.querySelectorAll('.look-tab')];
+  const panels={gents:document.getElementById('look-gents'),ladies:document.getElementById('look-ladies')};
+  if(!tabs.length||!panels.gents||!panels.ladies) return;
+  tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      const key=tab.dataset.look;
+      tabs.forEach(t=>{
+        const on=t===tab;
+        t.classList.toggle('is-active',on);
+        t.setAttribute('aria-selected',on?'true':'false');
+      });
+      Object.entries(panels).forEach(([k,el])=>{
+        const on=k===key;
+        el.classList.toggle('is-active',on);
+        if(on) el.removeAttribute('hidden'); else el.setAttribute('hidden','');
+      });
+    });
+  });
+})();

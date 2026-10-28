@@ -1,11 +1,18 @@
-Stock lookbook photos (Unsplash License — free to use commercially; attribution appreciated):
-- look-1: unsplash.com/photos (photo-1492106087820-71f1a00d2b11)
-- look-2: unsplash.com (photo-1519699047748-de8e457a634e)
-- look-3: unsplash.com (photo-1595476108010-b4d1f102b1b1)
-- look-4: unsplash.com (photo-1522337360788-8b13dee7a37e)
-- look-5: unsplash.com (photo-1487412720507-e7ab37603c6f)
+Stock lookbook photos — labelled on-site as stock; not salon clients.
+
+Ladies (Indian / South Asian urban beauty & hair):
+- look-l1: Unsplash — vivekrb (photo-1761498373017) — soft waves & warm colour
+- look-l2: Unsplash (photo-1623091411395) — sleek straight / blowout
+- look-l3: Unsplash (photo-1617627143750) — bridal-adjacent soft glam
+- look-l4: Unsplash (photo-1610030469983) — festive / party glam
+
+Gents (urban Indian salon cuts & grooming):
+- look-g1: Pexels (16098668) — high fade & quiff (TONI&GUY Pondicherry)
+- look-g2: Pexels (1516680) — quiff & beard
+- look-g3: Pexels (2379004) — textured cut & beard
+- look-g4: Unsplash (photo-1618886614638) — pompadour grooming
 
 Hero: custom cinematic beauty rendition generated for this preview.
 Work 1/2/5: premium remakes based on salon Instagram work references.
 About-1 / about-2 / interior-1 / exterior-2: graded from real salon photos.
-Logo: official Hair & Glow mark with white/grey background removed.
+Logo: official Hair & Glow mark — white transparent variant for dark header/intro; cream transparent for light grounds.
