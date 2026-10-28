@@ -10,6 +10,15 @@
 .work-card{margin:0;border-radius:12px;overflow:hidden;background:#ddd;aspect-ratio:3/4;position:relative}
 .work-card img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
 .work-card:hover img{transform:scale(1.035)}
+
+.look-tabs{display:inline-flex;gap:0;margin:0 0 22px;border:1px solid var(--line);border-radius:999px;padding:4px;background:var(--card)}
+.look-tab{appearance:none;border:0;background:transparent;font:700 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:10px 18px;border-radius:999px;cursor:pointer;transition:background .25s ease,color .25s ease}
+.look-tab.is-active{background:var(--ink);color:#f6f3ee}
+.look-tab:hover:not(.is-active){color:var(--ink)}
+.look-panel[hidden]{display:none!important}
+.look-panel{display:block}
+.look-subhead{margin:0 0 14px;font-size:.86rem;color:var(--muted);letter-spacing:.04em}
+
 .look-cap{position:absolute;left:10px;bottom:10px;margin:0;padding:5px 9px;border-radius:999px;background:rgba(246,243,238,.92);color:var(--muted);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .caption{color:var(--muted);font-size:.86rem;margin:14px 0 8px}
 .text-link{font-weight:700;text-decoration:none;border-bottom:1px solid currentColor}

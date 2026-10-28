@@ -9,7 +9,7 @@
 <title>Hair and Glow Salon · Ghatkopar East (Preview)</title>
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/logo-transparent.png" as="image">
+<link rel="preload" href="assets/logo-white.png" as="image">
 <link rel="preload" href="assets/hero-1920.webp" as="image" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
   <div class="intro-iris" aria-hidden="true"></div>
   <div class="intro-stage">
     <div class="intro-mark">
-      <img src="assets/logo-transparent.png" width="240" height="191" alt="" decoding="async">
+      <img src="assets/logo-white.png" width="240" height="191" alt="" decoding="async">
     </div>
     <p class="intro-word">Hair &amp; Glow</p>
     <span class="intro-hairline" aria-hidden="true"></span>
@@ -41,7 +41,7 @@
 <header class="site-header" id="top">
   <div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Hair and Glow Salon">
-      <img class="brand-logo" src="assets/logo-transparent.png" width="140" height="111" alt="Hair &amp; Glow Salon">
+      <img class="brand-logo" src="assets/logo-white.png" width="140" height="111" alt="Hair &amp; Glow Salon">
     </a>
     <span class="preview-badge">Preview</span>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -120,40 +120,83 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Lookbook</p>
-      <h2>Model &amp; mood</h2>
-      <p class="section-lead">Curated stock beauty for the preview — labelled clearly, not claimed as salon clients.</p>
+      <h2>Gents &amp; Ladies</h2>
+      <p class="section-lead">Indian urban salon mood — curated stock models, labelled clearly, not claimed as salon clients.</p>
     </div>
-    <div class="look-grid">
-      <figure class="work-card reveal">
-        <picture>
-          <source srcset="assets/look-1.webp" type="image/webp">
-          <img src="assets/look-1.webp" width="1620" height="2160" alt="Lookbook model — long hair beauty (stock)" loading="lazy" decoding="async">
-        </picture>
-        <figcaption class="look-cap">Lookbook — stock</figcaption>
-      </figure>
-      <figure class="work-card reveal">
-        <picture>
-          <source srcset="assets/look-2.webp" type="image/webp">
-          <img src="assets/look-2.webp" width="1800" height="2400" alt="Lookbook model — portrait (stock)" loading="lazy" decoding="async">
-        </picture>
-        <figcaption class="look-cap">Lookbook — stock</figcaption>
-      </figure>
-      <figure class="work-card reveal">
-        <picture>
-          <source srcset="assets/look-3.webp" type="image/webp">
-          <img src="assets/look-3.webp" width="1620" height="2160" alt="Lookbook model — soft portrait (stock)" loading="lazy" decoding="async">
-        </picture>
-        <figcaption class="look-cap">Lookbook — stock</figcaption>
-      </figure>
-      <figure class="work-card reveal">
-        <picture>
-          <source srcset="assets/look-4.webp" type="image/webp">
-          <img src="assets/look-4.webp" width="1619" height="2160" alt="Lookbook — salon styling mood (stock)" loading="lazy" decoding="async">
-        </picture>
-        <figcaption class="look-cap">Lookbook — stock</figcaption>
-      </figure>
+    <div class="look-tabs reveal" role="tablist" aria-label="Lookbook categories">
+      <button type="button" class="look-tab is-active" role="tab" aria-selected="true" aria-controls="look-gents" id="tab-gents" data-look="gents">Gents</button>
+      <button type="button" class="look-tab" role="tab" aria-selected="false" aria-controls="look-ladies" id="tab-ladies" data-look="ladies">Ladies</button>
     </div>
-    <p class="caption reveal">Stock photography via Unsplash License. Full list in assets/STOCK-ATTRIBUTION.txt.</p>
+
+    <div class="look-panel is-active" id="look-gents" role="tabpanel" aria-labelledby="tab-gents">
+      <p class="look-subhead">Men’s cuts, fades &amp; grooming</p>
+      <div class="look-grid">
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-g1.webp" type="image/webp">
+            <img src="assets/look-g1.webp" width="1280" height="1920" alt="Gents lookbook — high fade and quiff (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Fade &amp; quiff</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-g2.webp" type="image/webp">
+            <img src="assets/look-g2.webp" width="1280" height="1920" alt="Gents lookbook — quiff and beard grooming (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Quiff &amp; beard</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-g3.webp" type="image/webp">
+            <img src="assets/look-g3.webp" width="1271" height="1920" alt="Gents lookbook — textured cut and beard (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Textured cut</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-g4.webp" type="image/webp">
+            <img src="assets/look-g4.webp" width="1224" height="1920" alt="Gents lookbook — pompadour grooming (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Pompadour</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="look-panel" id="look-ladies" role="tabpanel" aria-labelledby="tab-ladies" hidden>
+      <p class="look-subhead">Soft glam, waves, colour &amp; festive looks</p>
+      <div class="look-grid">
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-l1.webp" type="image/webp">
+            <img src="assets/look-l1.webp" width="1536" height="1920" alt="Ladies lookbook — soft waves and warm colour (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Waves &amp; colour</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-l2.webp" type="image/webp">
+            <img src="assets/look-l2.webp" width="1280" height="1920" alt="Ladies lookbook — sleek straight blowout (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Sleek straight</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-l3.webp" type="image/webp">
+            <img src="assets/look-l3.webp" width="1280" height="1920" alt="Ladies lookbook — bridal-adjacent soft glam (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Bridal soft glam</figcaption>
+        </figure>
+        <figure class="work-card reveal">
+          <picture>
+            <source srcset="assets/look-l4.webp" type="image/webp">
+            <img src="assets/look-l4.webp" width="1280" height="1920" alt="Ladies lookbook — festive party glam (stock)" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="look-cap">Stock · Festive glam</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <p class="caption reveal">Stock photography (Unsplash / Pexels) — Indian urban salon mood. Full list in assets/STOCK-ATTRIBUTION.txt.</p>
   </div>
 </section>
 

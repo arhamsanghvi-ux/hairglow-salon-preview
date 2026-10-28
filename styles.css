@@ -7,17 +7,17 @@
 body{margin:0;font-family:var(--sans);font-weight:400;color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:inherit}img{max-width:100%;display:block;height:auto}
 .wrap{width:min(1060px,90%);margin:0 auto}.narrow{max-width:480px;margin-inline:auto}.center{text-align:center}
-.site-header{position:sticky;top:0;z-index:40;background:rgba(246,243,238,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:40;background:rgba(23,23,23,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);color:#f6f3ee}
 .header-inner{display:flex;align-items:center;gap:12px;min-height:72px}
-.brand{margin-right:auto;display:flex;align-items:center;text-decoration:none;background:transparent}
-.brand-logo{width:108px;height:auto;background:transparent}
-.preview-badge{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);padding:5px 9px;border-radius:999px}
+.brand{margin-right:auto;display:flex;align-items:center;text-decoration:none;background:transparent;padding-right:36px}
+.brand-logo{width:118px;height:auto;background:transparent;margin-right:12px}
+.preview-badge{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(246,243,238,.45);color:#f6f3ee;padding:5px 9px;border-radius:999px}
 .nav-toggle{background:0;border:0;padding:8px;cursor:pointer;display:flex;flex-direction:column;gap:5px}
-.nav-toggle span{width:18px;height:1.5px;background:var(--ink)}
-.site-nav{position:absolute;top:72px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+.nav-toggle span{width:18px;height:1.5px;background:#f6f3ee}
+.site-nav{position:absolute;top:72px;left:0;right:0;background:#171717;border-bottom:1px solid rgba(255,255,255,.08);display:none;color:#f6f3ee}
 .site-nav.open{display:block}
 .site-nav ul{list-style:none;margin:0;padding:6px 5%}
-.site-nav a{display:block;padding:13px 0;text-decoration:none;border-bottom:1px solid var(--line);font-size:.95rem}
+.site-nav a{display:block;padding:13px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.1);font-size:.95rem;color:#f6f3ee}
 .nav-cta{font-weight:700}
 .eyebrow{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin:0 0 10px;color:var(--muted)}
 h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;margin:0 0 14px}
