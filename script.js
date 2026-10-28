@@ -28,9 +28,9 @@
     },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     nodes.forEach(function(el){io.observe(el);});
   }else{nodes.forEach(function(el){el.classList.add('in');});}
-  // subtle hero parallax
   var heroImg=document.querySelector('.hero-media img');
-  if(heroImg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(heroImg && !reduce){
     var ticking=false;
     window.addEventListener('scroll',function(){
       if(ticking)return;ticking=true;
@@ -40,5 +40,24 @@
         ticking=false;
       });
     },{passive:true});
+  }
+  /* Opening logo intro */
+  var intro=document.getElementById('intro');
+  if(intro){
+    var done=false;
+    function finish(){
+      if(done)return;done=true;
+      intro.classList.add('is-done');
+      document.body.classList.remove('is-intro');
+      setTimeout(function(){if(intro.parentNode)intro.parentNode.removeChild(intro);},600);
+    }
+    if(reduce){finish();return;}
+    requestAnimationFrame(function(){intro.classList.add('is-in');});
+    var auto=setTimeout(finish,1850);
+    function skip(){clearTimeout(auto);finish();}
+    intro.addEventListener('click',skip);
+    var skipBtn=document.getElementById('intro-skip');
+    if(skipBtn)skipBtn.addEventListener('click',function(e){e.stopPropagation();skip();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.key==='Enter'||e.key===' ')skip();},{once:true});
   }
 })();
