@@ -1,16 +1,17 @@
 Stock lookbook photos — labelled on-site as stock; not salon clients.
+All lookbook images are model photos (clear people showing hair/beauty looks).
 
-Ladies (Indian / South Asian urban beauty & hair):
-- look-l1: Unsplash — vivekrb (photo-1761498373017) — soft waves & warm colour
-- look-l2: Unsplash (photo-1623091411395) — sleek straight / blowout
-- look-l3: Unsplash (photo-1617627143750) — bridal-adjacent soft glam
-- look-l4: Unsplash (photo-1610030469983) — festive / party glam
+Ladies (Indian / South Asian urban beauty & hair) — refreshed set:
+- look-l1: Pexels (18367686) — TONI&GUY Pondicherry — soft glam volume waves / layers
+- look-l2: Pexels (30703861) — elegant woman in saree, sleek straight length
+- look-l3: Pexels (30484195) — ASK LBA OFFICIAL — bridal-adjacent soft glam
+- look-l4: Pexels (30495792) — AMA International Academy — festive bridal glam
 
-Gents (urban Indian salon cuts & grooming):
+Gents (urban cuts & grooming) — model-only:
 - look-g1: Pexels (16098668) — high fade & quiff (TONI&GUY Pondicherry)
 - look-g2: Pexels (1516680) — quiff & beard
 - look-g3: Pexels (2379004) — textured cut & beard
-- look-g4: Unsplash (photo-1618886614638) — pompadour grooming
+- look-g4: Pexels (1681010) — curly textured top (replaced fashion-walk shot)
 
 Hero: custom cinematic beauty rendition generated for this preview.
 Work 1/2/5: premium remakes based on salon Instagram work references.
