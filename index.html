@@ -4,115 +4,221 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Preview website for Hair and Glow Salon, Station Road, Ghatkopar East, Mumbai.">
-<meta name="theme-color" content="#1c1917">
+<meta name="description" content="Preview website for Hair and Glow Unisex Family Salon, Pant Nagar, Ghatkopar East, Mumbai.">
+<meta name="theme-color" content="#f6f3ee">
 <title>Hair and Glow Salon · Ghatkopar East (Preview)</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml">
+<link rel="preload" href="assets/exterior-2.svg" as="image" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="styles-more.css">
+<link rel="stylesheet" href="styles-layout.css">
+<link rel="stylesheet" href="styles-motion.css">
 </head>
 <body>
 <header class="site-header" id="top">
- <div class="wrap header-inner">
-  <a class="brand" href="#top"><span class="mark">H&amp;G</span><span class="brand-text"><strong>Hair and Glow</strong><small>Salon · Ghatkopar East</small></span></a>
-  <span class="preview-badge" title="Preview site, not yet live">Preview</span>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
-  <nav class="site-nav" id="site-nav" aria-label="Primary"><ul>
-   <li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#visit">Visit</a></li><li><a class="nav-cta" href="#book">Book</a></li>
-  </ul></nav>
- </div>
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Hair and Glow Salon">
+      <picture>
+        <source srcset="assets/logo.svg" type="image/svg+xml">
+        <img class="brand-logo" src="assets/logo.svg" width="140" height="95" alt="Hair &amp; Glow Salon">
+      </picture>
+    </a>
+    <span class="preview-badge">Preview</span>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#gents">Gents</a></li>
+        <li><a href="#ladies">Ladies</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#visit">Find us</a></li>
+        <li><a class="nav-cta" href="https://wa.me/919819103125?text=Hi%20Hair%20and%20Glow%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
 <main>
 <section class="hero">
- <div class="wrap hero-grid">
-  <div class="hero-copy">
-   <p class="eyebrow">Hair Salon · Ghatkopar East, Mumbai</p>
-   <h1>Hair and Glow Salon</h1>
-   <p class="lead">Haircuts, colour and grooming on Station Road, Ghatkopar East &mdash; near Mumbai Bank, opposite Arthi Lab.</p>
-   <div class="hero-actions">
-    <a class="btn btn-gold" href="tel:+919819103125">Call +91 98191 03125</a>
-    <a class="btn btn-ghost" id="wa-hero" href="https://wa.me/919819103125?text=Hi%20Hair%20and%20Glow%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp us</a>
-   </div>
-   <p class="hours-chip">Open daily from 9 AM &middot; <a href="#visit">See timings</a></p>
+  <div class="hero-media">
+    <picture>
+      <source srcset="assets/exterior-2.svg" type="image/svg+xml">
+      <img src="assets/exterior-2.svg" width="800" height="370" alt="Hair &amp; Glow Unisex Salon storefront at night" fetchpriority="high">
+    </picture>
+    <div class="hero-scrim"></div>
   </div>
-  <figure class="hero-media">
-   <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=70" alt="Generic salon interior (stock photo)" width="900" height="1100" loading="eager">
-   <figcaption>Stock photo &mdash; not the actual salon</figcaption>
-  </figure>
- </div>
-</section>
-
-<section class="section" id="services">
- <div class="wrap">
-  <p class="eyebrow">Services</p>
-  <h2>What we do</h2>
-  <div class="cards">
-   <article class="card"><h3>Haircuts</h3><p>Cuts and styling.</p></article>
-   <article class="card"><h3>Hair colour</h3><p>Hair colouring services.</p></article>
-   <article class="card"><h3>D-Tan</h3><p>De-tan treatment.</p></article>
-   <article class="card"><h3>Facials</h3><p>Facial services.</p></article>
+  <div class="wrap hero-copy reveal">
+    <p class="eyebrow">Unisex Family Salon · Ghatkopar East</p>
+    <h1>Look good. Feel at home.</h1>
+    <p class="lead">Hair, skin, makeup and nails on Station Road — with Santosh Tavare.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/919819103125?text=Hi%20Hair%20and%20Glow%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book appointment</a>
+      <a class="btn btn-ghost" href="tel:+919819103125">Call</a>
+    </div>
+    <p class="trust-line"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google · 43 reviews</p>
   </div>
-  <p class="note">Services shown are those mentioned on the salon’s public Google listing. For the full menu and prices, please call or WhatsApp.</p>
- </div>
 </section>
 
-<section class="section alt" id="about">
- <div class="wrap narrow">
-  <p class="eyebrow">About</p>
-  <h2>Your neighbourhood salon on Station Road</h2>
-  <p>Hair and Glow Salon is run by Santosh Tavare at Shop No. 3, Neelkanth Regalia, Station Road, Ghatkopar East. Drop in or book ahead on WhatsApp &mdash; the salon is open seven days a week.</p>
- </div>
+<section class="section work-first" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Work</p>
+      <h2>From the salon floor</h2>
+    </div>
+    <div class="work-grid">
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/work-1.svg" type="image/svg+xml">
+          <img src="assets/work-1.svg" width="280" height="399" alt="Hair work from Hair and Glow Instagram" loading="lazy">
+        </picture>
+      </figure>
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/work-5.svg" type="image/svg+xml">
+          <img src="assets/work-5.svg" width="280" height="399" alt="Hair colour and waves from the salon" loading="lazy">
+        </picture>
+      </figure>
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/work-2.svg" type="image/svg+xml">
+          <img src="assets/work-2.svg" width="280" height="399" alt="Layered hair finish from the salon" loading="lazy">
+        </picture>
+      </figure>
+      <figure class="work-card reveal hide-m">
+        <picture>
+          <source srcset="assets/interior-1.svg" type="image/svg+xml">
+          <img src="assets/interior-1.svg" width="360" height="609" alt="Styling floor at Hair and Glow" loading="lazy">
+        </picture>
+      </figure>
+    </div>
+    <p class="caption reveal">Real salon work from Instagram — not stock.</p>
+    <p class="center reveal"><a class="text-link" href="https://www.instagram.com/__hair__and__glow__/" target="_blank" rel="noopener">See more on Instagram →</a></p>
+  </div>
 </section>
 
-<section class="section" id="book">
- <div class="wrap narrow center">
-  <p class="eyebrow">Book</p>
-  <h2>Book your appointment</h2>
-  <p>Send us a message on WhatsApp with your preferred day and time, or give us a call.</p>
-  <form class="book-form" id="book-form">
-   <label>Name<input name="name" type="text" autocomplete="name" placeholder="Your name"></label>
-   <label>Service<input name="service" type="text" placeholder="e.g. Haircut"></label>
-   <label>Preferred day &amp; time<input name="when" type="text" placeholder="e.g. Saturday 11 AM"></label>
-   <button class="btn btn-gold" type="submit">Book on WhatsApp</button>
-  </form>
-  <p class="note">Opens WhatsApp with a pre-filled message. Nothing is stored on this site.</p>
- </div>
+<section class="section alt" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Services</p>
+      <h2>Gents &amp; Ladies</h2>
+      <p class="section-lead">Verified from Instagram and Google reviews. Ask on WhatsApp for the full menu and prices.</p>
+    </div>
+    <div class="split">
+      <article class="panel reveal" id="gents">
+        <p class="panel-kicker">Gents</p>
+        <h3>Grooming</h3>
+        <ul class="svc">
+          <li><span>Cut</span> Haircut</li>
+          <li><span>Style</span> Grooming &amp; styling</li>
+          <li><span>Skin</span> D-Tan · clean-ups</li>
+        </ul>
+        <a class="btn btn-dark btn-sm" href="https://wa.me/919819103125?text=Hi%2C%20I%27d%20like%20to%20book%20a%20gents%20appointment%20at%20Hair%20and%20Glow." target="_blank" rel="noopener">Book gents</a>
+      </article>
+      <article class="panel reveal" id="ladies">
+        <p class="panel-kicker">Ladies</p>
+        <h3>Hair &amp; beauty</h3>
+        <ul class="svc">
+          <li><span>Cut</span> Haircut &amp; styling</li>
+          <li><span>Colour</span> Colour / highlights</li>
+          <li><span>Treat</span> Hair spa</li>
+          <li><span>Skin</span> Facials · D-Tan · clean-ups</li>
+          <li><span>More</span> Makeup · Nails</li>
+        </ul>
+        <a class="btn btn-dark btn-sm" href="https://wa.me/919819103125?text=Hi%2C%20I%27d%20like%20to%20book%20a%20ladies%20appointment%20at%20Hair%20and%20Glow." target="_blank" rel="noopener">Book ladies</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="partners" aria-label="Brands used in salon">
+  <div class="wrap partners-inner reveal">
+    <p class="eyebrow">In salon</p>
+    <p class="partner-name">L’Oréal Professionnel</p>
+    <p class="partner-note">Seen on the salon’s shopfront displays</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <p class="eyebrow">About</p>
+      <h2>Your neighbourhood salon</h2>
+      <p class="blurb">“Unisex Salon. Best destination for yourself.”</p>
+      <p>Run by <strong>Santosh Tavare</strong> at Neelkanth Regalia, Station Road. Open seven days a week.</p>
+      <blockquote class="quote">
+        <p>“Have been going to Santosh from 10 plus years. One of the best hair dressers in town.”</p>
+        <cite>Google review</cite>
+      </blockquote>
+    </div>
+    <figure class="about-photo reveal">
+      <picture>
+        <source srcset="assets/exterior-1.svg" type="image/svg+xml">
+        <img src="assets/exterior-1.svg" width="380" height="547" alt="Daytime shopfront of Hair and Glow Salon" loading="lazy">
+      </picture>
+    </figure>
+  </div>
 </section>
 
 <section class="section alt" id="visit">
- <div class="wrap visit-grid">
-  <div>
-   <p class="eyebrow">Visit</p>
-   <h2>Find us</h2>
-   <address>Shop No. 3, Neelkanth Regalia, Station Road,<br>near Mumbai Bank, opp. Arthi Lab,<br>Shival Nagar, Saibaba Nagar, Pant Nagar,<br>Ghatkopar East, Mumbai, Maharashtra 400077</address>
-   <p><a class="link" href="https://www.google.com/maps?kgmid=/g/11ynb9dmyv" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
-   <h3>Timings</h3>
-   <table class="hours">
-    <tr><th>Monday</th><td>9 AM &ndash; 9 PM</td></tr>
-    <tr><th>Tuesday</th><td>9 AM &ndash; 10:30 PM</td></tr>
-    <tr><th>Wednesday</th><td>9 AM &ndash; 10:30 PM</td></tr>
-    <tr><th>Thursday</th><td>9 AM &ndash; 10:30 PM</td></tr>
-    <tr><th>Friday</th><td>9 AM &ndash; 10:30 PM</td></tr>
-    <tr><th>Saturday</th><td>9 AM &ndash; 9:30 PM</td></tr>
-    <tr><th>Sunday</th><td>9 AM &ndash; 10:30 PM</td></tr>
-   </table>
-   <p class="note">Timings as listed on Google; please call to confirm on holidays.</p>
-   <div class="hero-actions"><a class="btn btn-dark" href="tel:+919819103125">Call</a><a class="btn btn-ghost-dark" href="https://wa.me/919819103125" target="_blank" rel="noopener">WhatsApp</a></div>
+  <div class="wrap visit-grid">
+    <div class="reveal">
+      <p class="eyebrow">Find us</p>
+      <h2>Pant Nagar, Ghatkopar East</h2>
+      <address>
+        Shop No. 3, Neelkanth Regalia, Station Road,<br>
+        near Mumbai Bank, opp. Arthi Lab,<br>
+        Shival Nagar, Saibaba Nagar, Pant Nagar,<br>
+        Ghatkopar East, Mumbai 400077
+      </address>
+      <p><a class="text-link" href="https://maps.app.goo.gl/CJLmbjpxQ3DuPc347" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <h3 class="hours-title">Timings</h3>
+      <table class="hours">
+        <tr><th>Mon</th><td>9 AM – 9 PM</td></tr>
+        <tr><th>Tue–Fri</th><td>9 AM – 10:30 PM</td></tr>
+        <tr><th>Sat</th><td>9 AM – 9:30 PM</td></tr>
+        <tr><th>Sun</th><td>9 AM – 10:30 PM</td></tr>
+      </table>
+      <p class="note">As listed on Google — confirm on holidays.</p>
+      <div class="hero-actions" style="margin-top:20px">
+        <a class="btn btn-dark" href="https://wa.me/919819103125?text=Hi%20Hair%20and%20Glow%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="btn btn-line" href="tel:+919819103125">+91 98191 03125</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map to Hair and Glow Salon" src="https://maps.google.com/maps?q=19.0850464,72.910559&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
-  <div class="map"><iframe title="Map to Hair and Glow Salon" src="https://maps.google.com/maps?q=19.0850464,72.910559&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
- </div>
+</section>
+
+<section class="section book" id="book">
+  <div class="wrap narrow center reveal">
+    <p class="eyebrow">Book</p>
+    <h2>Reserve your slot</h2>
+    <p>WhatsApp with your preferred day and time — or call the salon.</p>
+    <form class="book-form" id="book-form">
+      <label>Name<input name="name" type="text" autocomplete="name" placeholder="Your name"></label>
+      <label>Service<input name="service" type="text" placeholder="e.g. Ladies colour, Gents cut"></label>
+      <label>When<input name="when" type="text" placeholder="e.g. Saturday 11 AM"></label>
+      <button class="btn btn-primary" type="submit">Book on WhatsApp</button>
+    </form>
+    <p class="note">Opens WhatsApp with a pre-filled message. Nothing is stored here.</p>
+  </div>
 </section>
 </main>
+
 <footer class="site-footer">
- <div class="wrap">
-  <p><strong>Hair and Glow Salon</strong> · Ghatkopar East, Mumbai · <a href="tel:+919819103125">+91 98191 03125</a></p>
-  <p class="small">Preview site prepared by Webloom for Hair and Glow Salon — not yet live.</p>
- </div>
+  <div class="wrap">
+    <p><strong>Hair and Glow Salon</strong> · Ghatkopar East · <a href="tel:+919819103125">+91 98191 03125</a></p>
+    <p class="small">Preview site prepared for Hair and Glow Salon — not yet live.</p>
+  </div>
 </footer>
-<a class="wa-float" href="https://wa.me/919819103125" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+
+<a class="wa-float" href="https://wa.me/919819103125?text=Hi%20Hair%20and%20Glow%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Book appointment on WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.5 0 .2 5.3.2 11.85c0 2.1.55 4.1 1.6 5.9L0 24l6.4-1.67a11.8 11.8 0 0 0 5.65 1.44h.01c6.55 0 11.85-5.3 11.85-11.85 0-3.17-1.23-6.15-3.46-8.42zM12.05 21.5h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.8 1 1.01-3.7-.24-.38a9.8 9.8 0 0 1-1.5-5.22C2.15 6.4 6.6 1.95 12.05 1.95c2.62 0 5.08 1.02 6.93 2.88a9.72 9.72 0 0 1 2.87 6.92c0 5.45-4.45 9.75-9.8 9.75zm5.7-7.33c-.31-.16-1.84-.91-2.13-1.01-.28-.1-.49-.16-.7.16-.2.31-.8 1.01-.98 1.22-.18.2-.36.23-.67.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.55-1.85-1.73-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.2-.31.31-.52.1-.2.05-.39-.02-.55-.08-.16-.7-1.68-.96-2.3-.25-.6-.5-.52-.7-.53h-.6c-.2 0-.52.08-.8.39-.28.31-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.16.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.84-.75 2.1-1.48.26-.72.26-1.34.18-1.48-.07-.13-.28-.2-.59-.36z"/></svg>
+  <span>Book</span>
+</a>
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.panel,.work-card img{transition:none}
+  html{scroll-behavior:auto}
+  .hero-media img{transform:none}
+}
+@supports(backdrop-filter:blur(1px)){
+  .site-header{background:rgba(247,244,239,.86)}
+}
