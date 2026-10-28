@@ -1,15 +1,16 @@
-.hero{position:relative;color:#fff;min-height:82vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 52px;overflow:hidden}
+.hero{position:relative;color:#fff;min-height:86vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 52px;overflow:hidden}
 .hero-media{position:absolute;inset:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:scale(1.03);will-change:transform}
-.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.2),rgba(10,10,10,.5) 40%,rgba(10,10,10,.84))}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 28%;transform:scale(1.03);will-change:transform}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.18),rgba(10,10,10,.42) 42%,rgba(10,10,10,.82))}
 .hero-copy{position:relative;z-index:1;padding-top:110px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 12px}
 .trust-line{margin:0;font-size:.88rem;color:#d5cfc6}.stars{letter-spacing:.1em;margin-right:6px}
 .section{padding:76px 0}.alt{background:var(--bg2)}.work-first{padding-top:64px}.book{padding-bottom:100px}
-.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.work-card{margin:0;border-radius:12px;overflow:hidden;background:#ddd;aspect-ratio:3/4}
+.work-grid,.look-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.work-card{margin:0;border-radius:12px;overflow:hidden;background:#ddd;aspect-ratio:3/4;position:relative}
 .work-card img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
 .work-card:hover img{transform:scale(1.035)}
+.look-cap{position:absolute;left:10px;bottom:10px;margin:0;padding:5px 9px;border-radius:999px;background:rgba(246,243,238,.92);color:var(--muted);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .caption{color:var(--muted);font-size:.86rem;margin:14px 0 8px}
 .text-link{font-weight:700;text-decoration:none;border-bottom:1px solid currentColor}
 .split{display:grid;gap:14px}
@@ -24,12 +25,16 @@
 .partners-inner{text-align:center}
 .partner-name{font-family:var(--display);font-size:1.6rem;margin:0 0 4px}
 .partner-note{margin:0;color:var(--muted);font-size:.84rem}
-.about-grid{display:grid;gap:32px;align-items:center}
-.blurb{font-family:var(--display);font-size:1.4rem;line-height:1.35;margin:0 0 14px}
+.about-grid{display:grid;gap:36px;align-items:start}
+.about-grid p{margin:0 0 14px;color:#3a3530}
+.about-close{font-size:1.05rem;margin-top:6px!important}
+.about-meta{color:var(--muted)!important;font-size:.92rem}
 .quote{margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line)}
-.quote p{margin:0 0 6px;font-style:italic}.quote cite{font-style:normal;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.about-photo{margin:0;border-radius:14px;overflow:hidden;max-width:380px}
+.quote p{margin:0 0 6px;font-style:italic;color:var(--ink)!important}.quote cite{font-style:normal;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.about-photos{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;align-items:end}
+.about-photo{margin:0;border-radius:14px;overflow:hidden}
 .about-photo img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.about-photo-2{transform:translateY(18px)}
 .visit-grid{display:grid;gap:28px}
 address{font-style:normal;line-height:1.75;margin:0 0 10px}
 .hours-title{margin-top:18px;font-size:1.2rem}
@@ -48,13 +53,18 @@ address{font-style:normal;line-height:1.75;margin:0 0 10px}
 @media(min-width:860px){
   .nav-toggle{display:none}
   .site-nav{position:static;display:block;background:0;border:0}
-  .site-nav ul{display:flex;gap:26px;padding:0;align-items:center}
+  .site-nav ul{display:flex;gap:22px;padding:0;align-items:center}
   .site-nav a{border:0;padding:0}
   .brand-logo{width:124px}
-  .hero{min-height:88vh;padding-bottom:72px}
+  .hero{min-height:92vh;padding-bottom:72px}
   .work-grid{grid-template-columns:repeat(4,1fr);gap:14px}
+  .look-grid{grid-template-columns:repeat(4,1fr);gap:14px}
   .hide-m{display:block}
   .split{grid-template-columns:1fr 1fr;gap:18px}
-  .about-grid{grid-template-columns:1.1fr .9fr;gap:48px}
+  .about-grid{grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
   .visit-grid{grid-template-columns:1fr 1fr;align-items:stretch}
+}
+@media(max-width:859px){
+  .about-photos{grid-template-columns:1fr 1fr}
+  .about-photo-2{transform:none}
 }

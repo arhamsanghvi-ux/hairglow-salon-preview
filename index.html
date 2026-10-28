@@ -7,30 +7,41 @@
 <meta name="description" content="Preview website for Hair and Glow Unisex Family Salon, Pant Nagar, Ghatkopar East, Mumbai.">
 <meta name="theme-color" content="#f6f3ee">
 <title>Hair and Glow Salon · Ghatkopar East (Preview)</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml">
-<link rel="preload" href="assets/exterior-2.svg" as="image" type="image/svg+xml">
+<link rel="preload" href="assets/logo-transparent.png" as="image">
+<link rel="preload" href="assets/hero-1920.webp" as="image" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="styles-layout.css">
 <link rel="stylesheet" href="styles-motion.css">
 </head>
 <body class="is-intro">
-<div class="intro" id="intro" role="presentation">
+<div class="intro" id="intro" role="presentation" aria-hidden="false">
   <button type="button" class="intro-skip" id="intro-skip">Skip</button>
-  <div class="intro-mark">
-    <img src="assets/logo.svg" width="200" height="135" alt="" decoding="async">
+  <div class="intro-grain" aria-hidden="true"></div>
+  <div class="intro-bloom" aria-hidden="true"></div>
+  <div class="intro-panels" aria-hidden="true">
+    <span class="intro-panel intro-panel-l"></span>
+    <span class="intro-panel intro-panel-r"></span>
+  </div>
+  <div class="intro-iris" aria-hidden="true"></div>
+  <div class="intro-stage">
+    <div class="intro-mark">
+      <img src="assets/logo-transparent.png" width="240" height="191" alt="" decoding="async">
+    </div>
+    <p class="intro-word">Hair &amp; Glow</p>
+    <span class="intro-hairline" aria-hidden="true"></span>
+    <p class="intro-place">Ghatkopar East</p>
   </div>
 </div>
+
 <header class="site-header" id="top">
   <div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Hair and Glow Salon">
-      <picture>
-        <source srcset="assets/logo.svg" type="image/svg+xml">
-        <img class="brand-logo" src="assets/logo.svg" width="140" height="95" alt="Hair & Glow Salon">
-      </picture>
+      <img class="brand-logo" src="assets/logo-transparent.png" width="140" height="111" alt="Hair &amp; Glow Salon">
     </a>
     <span class="preview-badge">Preview</span>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -39,6 +50,7 @@
         <li><a href="#gents">Gents</a></li>
         <li><a href="#ladies">Ladies</a></li>
         <li><a href="#work">Work</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
         <li><a href="#visit">Find us</a></li>
         <li><a class="nav-cta" href="https://wa.me/919819103125?text=Hi%20Hair%20and%20Glow%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book</a></li>
       </ul>
@@ -50,8 +62,8 @@
 <section class="hero">
   <div class="hero-media">
     <picture>
-      <source srcset="assets/exterior-2.svg" type="image/svg+xml">
-      <img src="assets/exterior-2.svg" width="800" height="370" alt="Hair & Glow Unisex Salon storefront at night" fetchpriority="high">
+      <source type="image/webp" srcset="assets/hero-1920.webp 1920w, assets/hero-4k.webp 3840w" sizes="100vw">
+      <img src="assets/hero-1920.jpg" srcset="assets/hero-1920.jpg 1920w, assets/hero-4k.jpg 3840w" sizes="100vw" width="3840" height="2160" alt="Quiet-luxury beauty portrait — soft cream light and finished hair" fetchpriority="high" decoding="async">
     </picture>
     <div class="hero-scrim"></div>
   </div>
@@ -76,39 +88,80 @@
     <div class="work-grid">
       <figure class="work-card reveal">
         <picture>
-          <source srcset="assets/work-1.svg" type="image/svg+xml">
-          <img src="assets/work-1.svg" width="280" height="399" alt="Hair work from Hair and Glow Instagram" loading="lazy">
+          <source srcset="assets/work-1.webp" type="image/webp">
+          <img src="assets/work-1.jpg" width="1620" height="2160" alt="Premium remake of salon hair work" loading="lazy" decoding="async">
         </picture>
       </figure>
       <figure class="work-card reveal">
         <picture>
-          <source srcset="assets/work-5.svg" type="image/svg+xml">
-          <img src="assets/work-5.svg" width="280" height="399" alt="Hair colour and waves from the salon" loading="lazy">
+          <source srcset="assets/work-5.webp" type="image/webp">
+          <img src="assets/work-5.jpg" width="1620" height="2160" alt="Colour and waves — premium remake of salon work" loading="lazy" decoding="async">
         </picture>
       </figure>
       <figure class="work-card reveal">
         <picture>
-          <source srcset="assets/work-2.svg" type="image/svg+xml">
-          <img src="assets/work-2.svg" width="280" height="399" alt="Layered hair finish from the salon" loading="lazy">
+          <source srcset="assets/work-2.webp" type="image/webp">
+          <img src="assets/work-2.jpg" width="1620" height="2160" alt="Layered finish — premium remake of salon work" loading="lazy" decoding="async">
         </picture>
       </figure>
       <figure class="work-card reveal hide-m">
         <picture>
-          <source srcset="assets/interior-1.svg" type="image/svg+xml">
-          <img src="assets/interior-1.svg" width="360" height="609" alt="Styling floor at Hair and Glow" loading="lazy">
+          <source srcset="assets/interior-1.webp" type="image/webp">
+          <img src="assets/interior-1.jpg" width="997" height="2160" alt="Styling floor at Hair and Glow" loading="lazy" decoding="async">
         </picture>
       </figure>
     </div>
-    <p class="caption reveal">Real salon work from Instagram — not stock.</p>
+    <p class="caption reveal">Salon work, remade for a cleaner premium look — based on real Instagram finishes.</p>
     <p class="center reveal"><a class="text-link" href="https://www.instagram.com/__hair__and__glow__/" target="_blank" rel="noopener">See more on Instagram →</a></p>
   </div>
 </section>
 
-<section class="section alt" id="services">
+<section class="section alt" id="lookbook">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Lookbook</p>
+      <h2>Model &amp; mood</h2>
+      <p class="section-lead">Curated stock beauty for the preview — labelled clearly, not claimed as salon clients.</p>
+    </div>
+    <div class="look-grid">
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/look-1.webp" type="image/webp">
+          <img src="assets/look-1.jpg" width="1620" height="2160" alt="Lookbook model — long hair beauty (stock)" loading="lazy" decoding="async">
+        </picture>
+        <figcaption class="look-cap">Lookbook — stock</figcaption>
+      </figure>
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/look-2.webp" type="image/webp">
+          <img src="assets/look-2.jpg" width="1800" height="2400" alt="Lookbook model — portrait (stock)" loading="lazy" decoding="async">
+        </picture>
+        <figcaption class="look-cap">Lookbook — stock</figcaption>
+      </figure>
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/look-3.webp" type="image/webp">
+          <img src="assets/look-3.jpg" width="1620" height="2160" alt="Lookbook model — soft portrait (stock)" loading="lazy" decoding="async">
+        </picture>
+        <figcaption class="look-cap">Lookbook — stock</figcaption>
+      </figure>
+      <figure class="work-card reveal">
+        <picture>
+          <source srcset="assets/look-4.webp" type="image/webp">
+          <img src="assets/look-4.jpg" width="1619" height="2160" alt="Lookbook — salon styling mood (stock)" loading="lazy" decoding="async">
+        </picture>
+        <figcaption class="look-cap">Lookbook — stock</figcaption>
+      </figure>
+    </div>
+    <p class="caption reveal">Stock photography via Unsplash License. Full list in assets/STOCK-ATTRIBUTION.txt.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Services</p>
-      <h2>Gents & Ladies</h2>
+      <h2>Gents &amp; Ladies</h2>
       <p class="section-lead">Verified from Instagram and Google reviews. Ask on WhatsApp for the full menu and prices.</p>
     </div>
     <div class="split">
@@ -117,16 +170,16 @@
         <h3>Grooming</h3>
         <ul class="svc">
           <li><span>Cut</span> Haircut</li>
-          <li><span>Style</span> Grooming & styling</li>
+          <li><span>Style</span> Grooming &amp; styling</li>
           <li><span>Skin</span> D-Tan · clean-ups</li>
         </ul>
         <a class="btn btn-dark btn-sm" href="https://wa.me/919819103125?text=Hi%2C%20I%27d%20like%20to%20book%20a%20gents%20appointment%20at%20Hair%20and%20Glow." target="_blank" rel="noopener">Book gents</a>
       </article>
       <article class="panel reveal" id="ladies">
         <p class="panel-kicker">Ladies</p>
-        <h3>Hair & beauty</h3>
+        <h3>Hair &amp; beauty</h3>
         <ul class="svc">
-          <li><span>Cut</span> Haircut & styling</li>
+          <li><span>Cut</span> Haircut &amp; styling</li>
           <li><span>Colour</span> Colour / highlights</li>
           <li><span>Treat</span> Hair spa</li>
           <li><span>Skin</span> Facials · D-Tan · clean-ups</li>
@@ -150,20 +203,32 @@
   <div class="wrap about-grid">
     <div class="reveal">
       <p class="eyebrow">About</p>
-      <h2>Your neighbourhood salon</h2>
-      <p class="blurb">“Unisex Salon. Best destination for yourself.”</p>
-      <p>Run by <strong>Santosh Tavare</strong> at Neelkanth Regalia, Station Road. Open seven days a week.</p>
+      <h2>A Little Time for Yourself.<br>A Look That Feels Like You.</h2>
+      <p>Some places give you a haircut. Others make you glad you walked in.</p>
+      <p>At Hair and Glow Salon, we believe the difference is in the details: the comfort of feeling welcome, the ease of being understood, and the satisfaction of walking out with exactly the look you had in mind. No unnecessary fuss, no feeling like just another customer. Just good people, thoughtful service, and a team that genuinely cares about getting things right.</p>
+      <p>Whether you're stopping by for your regular trim, changing up your style, or simply taking a moment for yourself, we want every visit to feel easy, personal, and worth coming back for. In a space that is clean, comfortable, and cared for, you can sit back, speak your mind, and leave the little details to us.</p>
+      <p>Because great grooming isn't just about what you see in the mirror. It's about how you feel when you look into it.</p>
+      <p class="about-close"><strong>Hair and Glow Salon, Ghatkopar East.</strong> Walk in for the look. Come back for the experience.</p>
+      <p class="about-meta">Run by <strong>Santosh Tavare</strong> at Neelkanth Regalia, Station Road. Open seven days a week.</p>
       <blockquote class="quote">
         <p>“Have been going to Santosh from 10 plus years. One of the best hair dressers in town.”</p>
         <cite>Google review</cite>
       </blockquote>
     </div>
-    <figure class="about-photo reveal">
-      <picture>
-        <source srcset="assets/exterior-1.svg" type="image/svg+xml">
-        <img src="assets/exterior-1.svg" width="380" height="547" alt="Daytime shopfront of Hair and Glow Salon" loading="lazy">
-      </picture>
-    </figure>
+    <div class="about-photos reveal">
+      <figure class="about-photo">
+        <picture>
+          <source srcset="assets/about-1.webp" type="image/webp">
+          <img src="assets/about-1.jpg" width="1388" height="2160" alt="Hair and Glow Salon shopfront — colour-graded for a cleaner premium look" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="about-photo about-photo-2">
+        <picture>
+          <source srcset="assets/about-2.webp" type="image/webp">
+          <img src="assets/about-2.jpg" width="997" height="2160" alt="Inside the salon — graded from a real floor photo" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
   </div>
 </section>
 
